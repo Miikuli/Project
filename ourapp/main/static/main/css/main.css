@@ -1,0 +1,34 @@
+body {
+    background: #f9e8ff;
+}
+
+aside img {
+    width: 90px;
+    margin-left: 45px;
+    margin-top: 10px;
+}
+
+aside .logo {
+    font-size:25px;
+    margin-left:15px;
+    margin-top: 10px;
+}
+
+aside .btn-rounded {
+    border-radius: 19px;
+    padding-top: 6px;
+    padding-bottom: 7px;
+    margin-left:350px;
+}
+
+main .features{
+    font-size:17px;
+    margin-top: 40px;
+    margin-left:42px;
+    line-height: 1.2;
+}
+
+main .features button {
+    margin-left: 700px;
+    margin-left: 700px;
+}
