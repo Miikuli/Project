@@ -6,14 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="3bffcf7d-d136-49d6-af47-7872acab8151" name="Changes" comment="first">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ourapp/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/ourapp/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ourapp/main/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/ourapp/main/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ourapp/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ourapp/main/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ourapp/main/templates/main/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/ourapp/main/templates/main/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ourapp/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ourapp/main/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ourapp/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ourapp/main/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ourapp/ourapp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ourapp/ourapp/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ourapp/ourapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ourapp/ourapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ourapp/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/ourapp/users/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ourapp/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ourapp/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ourapp/users/templates/users/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/ourapp/users/templates/users/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ourapp/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ourapp/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,23 +28,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2eXmBCZnJeitDUHxQtBK0q1Hdq2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Кукуруза\PycharmProjects\OurApp\ourapp\main\static\main\img" />
