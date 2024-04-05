@@ -9,25 +9,42 @@ aside img {
 }
 
 aside .logo {
-    font-size: 40px;
+    font-size: 25px;
     margin-left: 15px;
     margin-top: 10px;
 }
 
-aside .btn-rounded {
+aside .login {
     border-radius: 19px;
     padding-top: 6px;
     padding-bottom: 7px;
-    margin-left:350px;
+    margin-top: -150px;
+    margin-left: 1250px;
 }
 
-aside .btn-block {
+aside .register {
     border-radius: 19px;
     padding-top: 6px;
     padding-bottom: 7px;
-    margin-left:600px;
+    margin-top: -150px;
+    margin-left: 25px;
 }
 
+aside .profile {
+    border-radius: 19px;
+    padding-top: 6px;
+    padding-bottom: 7px;
+    margin-top: -150px;
+    margin-left: 1250px;
+}
+
+aside .logout {
+    border-radius: 19px;
+    padding-top: 6px;
+    padding-bottom: 7px;
+    margin-top: -200px;
+    margin-left: 1375px;
+}
 
 main .features{
     font-size:17px;

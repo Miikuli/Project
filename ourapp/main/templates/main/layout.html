@@ -13,24 +13,23 @@
 </head>
 <body>
     <aside>
-        <img src="{% static 'main/img/logo.png' %}">
         <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+            <img src="{% static 'main/img/logo.png' %}">
             <span class="fs-4 logo">Образование360</span>
-        </a>
         {% block buttons %}
         {% endblock %}
         <div class="btn-rounded">
             {% if user.is_authenticated %}
-                <a class="btn btn-light btn-rounded" href="{% url 'profile' %}">Профиль</a>
+                <a class="btn btn-light btn-rounded profile" href="{% url 'profile' %}">Профиль</a>
                 <form method="post" action="{% url 'logout' %}">
                     {% csrf_token %}
-                    <button type="submit" class="btn btn-light btn-rounded">Выход</button>
+                    <button type="submit" class="btn btn-light btn-rounded logout">Выход</button>
                 </form>
             {% else %}
-                <a class="btn btn-light btn-rounded" href="{% url 'login' %}">Вход</a>
-                <a class="btn btn-light btn-rounded" href="{% url 'register' %}">Регистрация</a>
+                <a class="btn btn-light btn-rounded login" href="{% url 'login' %}">Вход</a>
+                <a class="btn btn-light btn-rounded register" href="{% url 'register' %}">Регистрация</a>
             {% endif %}
-        </div>
+        </div></a>
     </aside>
     <main>
         {% if messages %}
