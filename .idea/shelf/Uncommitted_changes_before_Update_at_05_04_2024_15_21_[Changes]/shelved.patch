@@ -1,0 +1,89 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"3bffcf7d-d136-49d6-af47-7872acab8151\" name=\"Changes\" comment=\"first\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ourapp/db.sqlite3\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ourapp/db.sqlite3\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ourapp/main/admin.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ourapp/main/admin.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ourapp/main/models.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ourapp/main/models.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ourapp/main/templates/main/layout.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ourapp/main/templates/main/layout.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ourapp/main/urls.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ourapp/main/urls.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ourapp/main/views.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ourapp/main/views.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ourapp/ourapp/settings.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ourapp/ourapp/settings.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ourapp/ourapp/urls.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ourapp/ourapp/urls.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\"><![CDATA[{\r\n  \"associatedIndex\": 4\r\n}]]></component>\r\n  <component name=\"ProjectId\" id=\"2eXmBCZnJeitDUHxQtBK0q1Hdq2\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"DefaultHtmlFileTemplate\": \"HTML File\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"git-widget-placeholder\": \"master\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Кукуруза\\PycharmProjects\\OurApp\\ourapp\\main\\static\\main\\img\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-python-sdk-d68999036c7f-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.14475.56\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"3bffcf7d-d136-49d6-af47-7872acab8151\" name=\"Changes\" comment=\"\" />\r\n      <created>1712059158690</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1712059158690</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"first\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1712063130869</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712063130870</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"first\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"first\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 636a17b7fc5a06c533823ba87359290de06972c8)
++++ b/.idea/workspace.xml	(date 1712312316529)
+@@ -7,13 +7,6 @@
+     <list default="true" id="3bffcf7d-d136-49d6-af47-7872acab8151" name="Changes" comment="first">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/ourapp/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/ourapp/db.sqlite3" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ourapp/main/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/ourapp/main/admin.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ourapp/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ourapp/main/models.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ourapp/main/templates/main/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/ourapp/main/templates/main/layout.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ourapp/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ourapp/main/urls.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ourapp/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ourapp/main/views.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ourapp/ourapp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ourapp/ourapp/settings.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ourapp/ourapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ourapp/ourapp/urls.py" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -30,23 +23,24 @@
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+-  <component name="ProjectColorInfo"><![CDATA[{
+-  "associatedIndex": 4
+-}]]></component>
++  <component name="ProjectColorInfo">{
++  &quot;associatedIndex&quot;: 4
++}</component>
+   <component name="ProjectId" id="2eXmBCZnJeitDUHxQtBK0q1Hdq2" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "DefaultHtmlFileTemplate": "HTML File",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "git-widget-placeholder": "master"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="C:\Users\Кукуруза\PycharmProjects\OurApp\ourapp\main\static\main\img" />
+@@ -78,6 +72,29 @@
+     </task>
+     <option name="localTasksCounter" value="2" />
+     <servers />
++  </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State>
++              <option name="FILTERS">
++                <map>
++                  <entry key="branch">
++                    <value>
++                      <list>
++                        <option value="origin/master" />
++                      </list>
++                    </value>
++                  </entry>
++                </map>
++              </option>
++            </State>
++          </value>
++        </entry>
++      </map>
++    </option>
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="first" />
