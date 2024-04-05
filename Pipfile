@@ -4,7 +4,6 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django-crispy-forms = "*"
 pillow = "*"
 
 [dev-packages]

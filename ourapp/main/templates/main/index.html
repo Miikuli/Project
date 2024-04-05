@@ -3,7 +3,8 @@
 {% block title %}Главная{% endblock %}
 
 {% block buttons %}
-    <a class="btn btn-light btn-rounded">Вход</a>
+    <a class="btn btn-light btn-rounded" href="{% url 'login' %}">Вход</a>
+    <a class="btn btn-light btn-rounded btn-block" href="{% url 'register' %}">Регистрация</a>
 {% endblock %}
 
 {% block content %}

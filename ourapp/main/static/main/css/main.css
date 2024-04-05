@@ -21,6 +21,14 @@ aside .btn-rounded {
     margin-left:350px;
 }
 
+aside .btn-block {
+    border-radius: 19px;
+    padding-top: 6px;
+    padding-bottom: 7px;
+    margin-left:600px;
+}
+
+
 main .features{
     font-size:17px;
     margin-top: 40px;
