@@ -12,9 +12,6 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 
-# Библиотеки для скрытия ключа на гитхаб
-from dotenv import load_dotenv
-import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -24,8 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # Подключение ключа из файла .env
-load_dotenv()
-SECRET_KEY = os.getenv('KEY')
+SECRET_KEY = "django-insecure-2njn25j*=p7fnkbselpo^(-&#@uc!r$c@*zs5lenl)$%9%cylx"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
