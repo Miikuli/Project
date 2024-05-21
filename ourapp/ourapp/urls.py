@@ -16,6 +16,7 @@ urlpatterns = [
     path('logout/', user_views.logout_view, name='logout'),
     path('session/', user_views.session_view, name='session'),
     path('user_info/', user_views.user_info, name='user_info'),
+    path('users/', user_views.users_list, name='users'),
     path('login/', user_views.login_view, name='login'),
     path('users/<int:user_id>/update/', user_views.update_user_view, name='update_user'),
     path('upload_photo/', user_views.upload_photo, name='upload_photo'),

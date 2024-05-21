@@ -13,6 +13,8 @@ from django.contrib.auth.models import User
 from .serializer import UserSerializer
 from django.http import FileResponse
 import os
+from .models import Profile
+from .serializer import ProfileSerializer
 
 # Декоратор для выдачи ошибки если пользователь неавторизован
 def json_login_required(view_func):
@@ -43,12 +45,15 @@ def session_view(request):
 # Получение информации о пользователе
 @json_login_required
 def user_info(request):
-    user = request.user
-    serializer = UserSerializer(user)
-    data = serializer.data
-    data['image'] = user.profile.image.url if user.profile.image else None
-    print("USER ", data)
-    return JsonResponse(data)
+    try:
+        user = request.user
+        serializer = UserSerializer(user)
+        data = serializer.data
+        profile = Profile.objects.get(user_id=user.id)
+        data['role'] = profile.role
+        return JsonResponse(data)
+    except Profile.DoesNotExist:
+        return JsonResponse({'detail': 'Профиль пользователя не найден'}, status=404)
 
 @require_POST
 def login_view(request):
@@ -102,6 +107,7 @@ def update_user_view(request, user_id):
     firstName = data.get('first_name')
     lastName = data.get('last_name')
     email = data.get('email')
+    role = data.get('role')
 
     # Проверяем, существует ли пользователь с указанным id
     try:
@@ -118,6 +124,9 @@ def update_user_view(request, user_id):
         user.last_name = lastName
     if email:
         user.email = email
+    if role:
+        user.profile.role = role
+        user.profile.save()
 
     user.save()
 
@@ -134,7 +143,6 @@ def logout_view(request):
 def upload_photo(request):
     user = request.user
     image = request.FILES.get('image')
-    print("IMAGE ", image)
     if image:
         # Сохранение фотографии пользователя
         user.profile.image = image
@@ -154,3 +162,30 @@ def user_photo(request):
         return response
     else:
         return JsonResponse({'detail': 'Фото не найдено'}, status=404)
+    
+# Получение профиля пользователя по id
+@json_login_required
+def user_profile_by_id(request, user_id):
+    try:
+        profile = Profile.objects.get(user_id=user_id)
+        serializer = ProfileSerializer(profile)
+        return JsonResponse(serializer.data)
+    except Profile.DoesNotExist:
+        return JsonResponse({'detail': 'Профиль пользователя не найден'}, status=404)
+    
+# Получение всех пользователей
+@json_login_required
+def users_list(request):
+    user_list = []
+    users = User.objects.all()
+    for user in users:
+        user_dict = {}
+        user_dict['id'] = user.id
+        user_dict['last_name'] = user.last_name
+        user_dict['first_name'] = user.first_name
+        user_dict['role'] = user.profile.role
+        
+        user_list.append(user_dict)
+
+    user_list = list(user_list)
+    return JsonResponse(user_list, safe=False)
