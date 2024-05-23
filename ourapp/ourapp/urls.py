@@ -2,6 +2,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.contrib.auth import views as auth_views
 from users import views as user_views
+from courses import views as courses_views
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -21,6 +22,14 @@ urlpatterns = [
     path('users/<int:user_id>/update/', user_views.update_user_view, name='update_user'),
     path('upload_photo/', user_views.upload_photo, name='upload_photo'),
     path('user/photo/', user_views.user_photo, name='user_photo'),
+
+    path('courses/', courses_views.getCourses, name='courses'),
+    path('courses/create/', courses_views.createCourse, name='create_course'),
+    path('courses/<int:courseId>/', courses_views.getСourseById, name='course-detail'),
+    path('courses/subscribe/', courses_views.subscribeСourse, name='subscribeСourse'),
+    path('courses/unsubscribe/', courses_views.unsubscribeCourse, name='unsubscribeCourse'),
+    path('courses/my/', courses_views.getSubscribedCourses, name='myCourses'),
+    path('courses/myCreated/', courses_views.getMyCreatedCourses, name='myCreatedCourses'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 if settings.DEBUG:
