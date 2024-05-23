@@ -30,6 +30,12 @@ urlpatterns = [
     path('courses/unsubscribe/', courses_views.unsubscribeCourse, name='unsubscribeCourse'),
     path('courses/my/', courses_views.getSubscribedCourses, name='myCourses'),
     path('courses/myCreated/', courses_views.getMyCreatedCourses, name='myCreatedCourses'),
+    path('courses/<int:courseId>/update/', courses_views.updateCourse, name='update_course'),
+    path('courses/<int:courseId>/files/create/', courses_views.addFileToCourse, name='addFileToCourse'),
+    path('courses/<int:courseId>/files/<int:fileId>/delete/', courses_views.deleteFileFromCourse, name='deleteFileFromCourse'),
+
+    path('courses/<int:courseId>/comments/create/', courses_views.createComment, name='createComment'),
+    path('courses/<int:courseId>/comments/', courses_views.getСourseСomments, name='getСourseСomments'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 if settings.DEBUG:
