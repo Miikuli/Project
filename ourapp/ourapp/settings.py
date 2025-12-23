@@ -34,6 +34,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'main.apps.MainConfig',
     'users.apps.UsersConfig',
+    'courses.apps.CoursesConfig',
     'crispy_forms',
     'crispy_bootstrap4',
     'django.contrib.admin',
@@ -42,9 +43,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -52,6 +56,47 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+
+CORS_ORIGIN_ALLOW_ALL = False
+CSRF_COOKIE_SAMESITE = 'Lax'
+SESSION_COOKIE_SAMESITE = 'Lax'
+
+# Чтобы cookie не были доступны из JS, нужен атрибут HttpOnly
+CSRF_COOKIE_HTTPONLY = True
+SESSION_COOKIE_HTTPONLY = True
+
+# Домены, которым мы доверяем
+CSRF_TRUSTED_ORIGINS = ['http://localhost:5173']
+
+# Когда приложение заимеет production окружение и https соединение
+#CSRF_COOKIE_SECURE = True
+#SESSION_COOKIE_SECURE = True
+
+# Время жизни сессии в секундах. По умолчанию 2 недели = 1209600
+#SESSION_COOKIE_AGE = 120 <- для примера 120 секунд
+
+# Чтобы убивать сессию при закрытии браузера
+#SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:5173',
+    'http://127.0.0.1:5173', 
+]
+# Разрешаем заголовки для межсайтовых запросов
+CORS_EXPOSE_HEADERS = ['Content-Type', 'X-CSRFToken']
+
+# Разрешаем отправлять cookie при межсайтовых запросах на разрешённые домены:
+CORS_ALLOW_CREDENTIALS = True
+
+CORS_ALLOW_HEADERS = [
+    "accept",
+    "authorization",
+    "content-type",
+    "user-agent",
+    "x-csrftoken",
+    "x-requested-with",
+    "x-xsrf-token"
 ]
 
 ROOT_URLCONF = 'ourapp.urls'

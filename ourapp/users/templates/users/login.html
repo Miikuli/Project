@@ -14,7 +14,7 @@
         </form>
         <div class="border-top pt-3">
             <small class="text-muted">
-                Нужен аккаунт? <a class="ml-2" href="{% url 'register' %}">Регистрация</a>
+                Нужен аккаунт? <a class="ml-2" href="{% url 'register' %}">Регистрация {{csrf_token}}</a>
             </small>
         </div>
     </div>
